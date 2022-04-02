@@ -1,0 +1,149 @@
+/* Général sittings */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+:root {
+    --PrimaryPaleBleu: (hsl(225, 100%, 94%));
+    --PrimaryBrightBleu: hsl(245, 75%, 52%);
+    --NeutralPaleBleu: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+/* Mobile Page */
+.background {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--NeutralPaleBleu);
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+    box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.5);
+}
+.top {
+    height: 150px;
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bottom {
+    background-color: white;
+    padding: 10px 5px;
+}
+.text {
+    margin: 20px 5px 15px 5px;
+    padding: 0 10px;
+}
+.text h1 {
+    color: var(--Darkblue);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.text p {
+    color: var(--Desaturatedblue);
+    margin: 0 15px 0 15px;
+    margin-bottom: 20px;
+}
+.price {
+    background-color: var(--NeutralPaleBleu);
+    padding: 15px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 0 20px 15px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.icon {
+    margin-right: 10px;
+    float: left;
+}
+.para {
+    font-weight: 600;
+    float: left;
+    line-height: 20px;
+    color: var(--Darkblue);
+}
+.para span {
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.734);
+}
+.button-1 {
+    float: right;
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--PrimaryBrightBleu);
+    border: none;
+    transition: all 0.4s ease;
+    position: absolute;
+    right: 10px;
+    font-weight: 600;
+}
+.button-1:hover {
+    color: rgba(49, 49, 235, 0.60)
+}
+.button-2 {
+    margin: 0 20px 20px 20px;
+    height: 45px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.7);
+}
+.button-2-cta {
+    background-color: var(--PrimaryBrightBleu);
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: var(--NeutralPaleBleu);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+.button-2-cta:hover {
+    background-color:hsla(245, 75%, 52%, 0.7);
+}
+.button-3-cta {
+    border: none;
+    color: var(--Desaturatedblue);
+    background-color: transparent;
+    transition: all 0.4s ease;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.button-3-cta:hover {
+    color: var(--Darkblue);
+}
+
+
+
+/* Media queries for 1440px  */
+@media screen and (min-width : 365px ) {
+    /* Background */
+    .background {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-size:cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+    .container {
+        max-width: 365px;
+    }
+}
